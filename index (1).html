@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kenneth Acosta – Portafolio</title>
+<meta name="description" content="Portafolio digital de Kenneth Acosta">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #000000;
+    --ink: #f2fdff;
+    --muted: #8fb4bb;
+    --line: #12343a;
+    --accent: #00e5ff;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header { padding: 1.5rem 0; }
+  nav { display: flex; gap: 1.5rem; flex-wrap: wrap; font-weight: 500; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--ink); text-decoration: underline; }
+
+  .hero { padding: 5rem 0 4rem; }
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(3rem, 12vw, 6.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin: 0 0 1.5rem;
+    color: var(--accent);
+    text-shadow: 0 0 24px rgba(0, 229, 255, 0.45);
+  }
+  .hero p { font-size: 1.25rem; max-width: 34rem; margin: 0; color: var(--muted); }
+  .hero p strong { color: var(--ink); font-weight: 600; }
+
+  section { padding: 3rem 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.75rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.5rem;
+  }
+  h3 { font-family: var(--display); font-weight: 500; font-size: 1.25rem; margin: 0; }
+
+  .proyecto { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+  .proyecto:first-of-type { padding-top: 0; }
+  .proyecto:last-of-type { border-bottom: 0; }
+  .proyecto p { margin: 0.35rem 0 0.5rem; max-width: 38rem; }
+  .tecnologias { color: var(--muted); font-size: 0.95rem; }
+
+  .estudio { display: grid; grid-template-columns: 8rem 1fr; gap: 0.5rem 1.5rem; margin-bottom: 1rem; }
+  .estudio .fecha { color: var(--muted); }
+  @media (max-width: 34rem) { .estudio { grid-template-columns: 1fr; gap: 0; } }
+
+  .habilidades { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .habilidades li { border: 1px solid var(--accent); border-radius: 999px; padding: 0.25rem 0.9rem; font-weight: 500; }
+
+  .contacto a { font-size: 1.25rem; font-weight: 600; }
+  .discord { color: var(--accent); }
+  .contacto ul { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 0.35rem; }
+
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.9rem; }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Principal">
+      <a href="#estudios">Estudios</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <h1>Kenneth Acosta</h1>
+      <p><strong>Estudiante de 11.º grado, Bachiller en Tecnología</strong> en el Instituto Fermín Naudeau. Me interesa la tecnología y estoy aprendiendo todo lo relacionado con ella.</p>
+    </div>
+
+    <section id="estudios">
+      <h2>Estudios</h2>
+      <div class="estudio">
+        <div class="fecha">Actualidad</div>
+        <div><strong>11.º grado, Bachiller en Tecnología</strong><br>Instituto Fermín Naudeau, Panamá</div>
+      </div>
+    </section>
+
+    <section id="intereses">
+      <h2>Áreas de interés</h2>
+      <ul class="habilidades">
+        <li>Desarrollo web</li>
+        <li>Redes</li>
+        <li>Ciberseguridad</li>
+      </ul>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="habilidades">
+        <li>HTML</li>
+        <li>Python (nivel básico)</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <a href="mailto:kennith.1249@gmail.com">kennith.1249@gmail.com</a>
+      <ul>
+        <li><a href="https://github.com/kennith16-12">GitHub</a></li>
+        <li><span class="discord">Discord: kenneth077658</span></li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Kenneth Acosta</div>
+</footer>
+
+</body>
+</html>
